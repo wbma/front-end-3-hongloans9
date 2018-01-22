@@ -1,7 +1,13 @@
-<ul>
-  <li *ngFor="let media of medias">
-    <img [src]="mediaService.mediaUrl + media.filename" height="200px" />
-    <h4>{{media.title}}</h4>
-    <p>{{media.description}}</p>
-  </li>
-</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let media of medias">
+      <div class="card">
+        <img class="card-img-top" [src]="mediaService.mediaUrl + media.filename" />
+        <div class="card-body">
+          <h5 class="card-title">{{media.title}}</h5>
+          <p class="card-text">{{media.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
