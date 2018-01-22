@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let media of medias">
+    <img [src]="mediaService.mediaUrl + media.filename" height="200px" />
+    <h4>{{media.title}}</h4>
+    <p>{{media.description}}</p>
+  </li>
+</ul>
