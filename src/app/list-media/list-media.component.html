@@ -11,3 +11,9 @@
     </div>
   </div>
 </div>
+<hr>
+<div *ngFor="let stop of stopArray">
+  <ul>
+    <li *ngFor="let route of stop.patterns">{{route.name}}</li>
+  </ul>
+</div>
